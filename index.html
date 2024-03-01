@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="JJ">
+        <meta name="description" content="JavaScript Device Info">
+        <meta name="keywords" content="JavaScript Device Info">
+        <title>JavaScript Device Info</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/index.css" type="text/css" media="all">
+        <script src="./assets/js/index.js" defer></script>
+    </head>
+    <body>
+        <main class="grid grid-center">
+            <div>
+                <section>
+                    <h2>System</h2>
+                    <div>
+                        <p>OS: <span class="os"></span></p>
+                        <p>Language: <span class="language"></span></p>
+                        <p>Browser: <span class="browser"></span></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Window</h2>
+                    <div>
+                        <p>Width: <span class="width"></span></p>
+                        <p>Height: <span class="height"></span></p>
+                        <p>Orientation: <span class="orientation"></span></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Battery</h2>
+                    <div>
+                        <p>Level: <span class="level">not available</span></p>
+                        <p>Status: <span class="charging">not available</span></p>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="online"></h2>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
