@@ -2,7 +2,7 @@
 
 ###### Using BOM
 
-A learning project of javascript, html and css
+This is a learning project involving JavaScript, HTML, and CSS.
 
 
 <br />
