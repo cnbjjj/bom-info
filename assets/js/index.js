@@ -19,29 +19,24 @@ const getBrowser = () => {
   const browser = contains(["Edg", "Chrome", "Firefox", "Safari", "MSIE"], navigator.userAgent);
   return browser.replace("Edg", "Edge");
 };
-
 function setInfo(prop, value) {
   query(`.${prop}`).innerText = value;
 }
-
 function updateSystemInfo() {
   setInfo('os', getOS());
   setInfo('browser', getBrowser());
   setInfo('language', navigator.language);
 }
-
 function updateWindowInfo() {
   setInfo('width', window.innerWidth + "px");
   setInfo('height', window.innerHeight + "px");
   setInfo('orientation', window.innerWidth > window.innerHeight ? 'Landscape' : 'Portrait');
 }
-
 function updateNetworkInfo() {
   const online = navigator.onLine ? "Online" : "Offline";
   setInfo('online', online);
   query('.online').classList.toggle('off', !navigator.onLine);
 }
-
 function updateBatteryInfo(battery) {
   setInfo('level', battery.level * 100 + "%");
   setInfo('charging', battery.charging ? 'Charging' : 'Idle');
